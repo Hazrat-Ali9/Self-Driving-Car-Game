@@ -1,3 +1,5 @@
+# Hazrat Ali Build : Self Driving Car Game 
+# Using Programming Language : Python
 import pygame
 pygame.init()
 window = pygame.display.set_mode((1200, 400))
@@ -25,6 +27,7 @@ while drive:
     print(up_px, right_px, down_px)
 
     # change direction (take turn)
+    
     if direction == 'up' and up_px != 255 and right_px == 255:
         direction = 'right'
         cam_x_offset = 30
@@ -46,7 +49,8 @@ while drive:
         car_x = car_x + 30
         cam_x_offset = 0
         car = pygame.transform.rotate(car, 90)
-    # drive
+
+    # drive part 
     if direction == 'up' and up_px == 255:
         car_y = car_y - 2
     elif direction == 'right' and right_px == 255:
