@@ -27,7 +27,7 @@ while drive:
     right_px = window.get_at((cam_x + focal_dis, cam_y))[0]
     print(up_px, right_px, down_px)
 
-    # change direction (take turn)
+    # Change direction (take turn)
     
     
     if direction == 'up' and up_px != 255 and right_px == 255:
